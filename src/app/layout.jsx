@@ -1,5 +1,6 @@
 import './globals.css'
 import '@radix-ui/themes/styles.css'
+import '../../theme-config.css'
 import { Inter } from 'next/font/google'
 import { Theme, ThemePanel } from '@radix-ui/themes'
 import { Providers } from '../../utils/providers'
@@ -17,11 +18,8 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Providers>
           <Theme
-            // appearance="dark"
             accentColor="sky"
-            // grayColor="sand"
-            // radius="large"
-            // scaling="95%"
+            // radius="small"
           >
             {children}
             {/* <ThemePanel /> */}
